@@ -1,0 +1,153 @@
+:root {
+  --colorComb-light: #f58d06;
+  --primary-text-color: #880000;
+  --secondary-text-color: #041433;
+  --white-color: #f0edeb;
+  --slate-gray: #292138;
+}
+
+.text-primary {
+  color: var(--primary-text-color);
+}
+
+.text-secondary {
+  color: var(--secondary-text-color);
+}
+
+/****************************** Btn start **************************/
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-primary {
+  background: var(--primary-text-color);
+  color: var(--white-color);
+}
+
+.btn-secondary {
+  background: var(--colorComb-light);
+  color: var(--white-color);
+}
+
+.btn-navy {
+  background: var(--secondary-text-color);
+  color: var(--white-color);
+}
+
+.btn-light {
+  background: var(--white-color);
+  color: var(--slate-gray)
+}
+
+/****************************** Btn end **************************/
+
+/****************************** Columns start **************************/
+
+.flex-columns .row.reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-columns .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flex-columns .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.flex-columns .column .column1,
+.flex-columns .column .column2 {
+    height: 100%;
+}
+
+.flex-columns img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.flex-columns .column2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+    background-color: var(--slate-gray);
+    color: var(--white-color);
+}
+
+.flex-columns .column2 h4 {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.flex-columns .column2 h2 {
+    font-size: 2.2rem;
+}
+.flex-columns .column2 p {
+    margin: 20px 0;
+}
+
+.flex-columns .column2 .btn {
+    margin-bottom: 20px;
+}
+
+
+/****************************** Columns end **************************/
+
+/****************************** Section-header start **************************/
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+.section-padding {
+    padding: 20px 20px 40px;
+}
+
+
+/****************************** Section-header end **************************/
+
+
+/****************************** Flex-grid Start **************************/
+
+.flex-grid .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-grid .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+/****************************** Flex-grid End **************************/
+
+
